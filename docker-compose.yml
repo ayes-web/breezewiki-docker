@@ -1,0 +1,13 @@
+---
+version: '3.8'
+
+services:
+  breezewiki:
+    image: ghcr.io/ayes-web/breezewiki:latest
+    container_name: breezewiki
+    build: .
+    volumes:
+      - "./config.ini:/app/config.ini"
+    ports:
+      - 10416:10416
+    restart: unless-stopped
