@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ayes-web/breezewiki
+  IMAGE_NAME: ayes-web/breezewiki-docker
 
 jobs:
   build-push:
@@ -43,7 +43,7 @@ jobs:
           file: Dockerfile
           platforms: linux/arm64/v8
           push: true
-          tags: ghcr.io/ayes-web/breezewiki:latest
+          tags: ghcr.io/ayes-web/breezewiki-docker:latest
           context: .
           cache-from: type=gha
           cache-to: type=gha,mode=max
