@@ -9,7 +9,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: BatteredBunny/breezewiki-docker
+  IMAGE_NAME: batteredbunny/breezewiki-docker
 
 jobs:
   build-push:
@@ -43,7 +43,7 @@ jobs:
           file: Dockerfile
           platforms: linux/amd64,linux/arm64/v8
           push: true
-          tags: ghcr.io/BatteredBunny/breezewiki-docker:latest
+          tags: ghcr.io/batteredbunny/breezewiki-docker:latest
           context: .
           cache-from: type=gha
           cache-to: type=gha,mode=max
