@@ -3,7 +3,7 @@ version: '3.8'
 
 services:
   breezewiki:
-    image: ghcr.io/ayes-web/breezewiki-docker:latest
+    image: ghcr.io/BatteredBunny/breezewiki-docker:latest
     container_name: breezewiki
     build: .
     volumes:
